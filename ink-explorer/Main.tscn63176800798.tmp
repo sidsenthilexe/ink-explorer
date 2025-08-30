@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhymjs8k02ono"]
+
+[ext_resource type="PackedScene" uid="uid://cg0k1b55hm2y0" path="res://vig_layer.tscn" id="1_r0du0"]
+[ext_resource type="PackedScene" uid="uid://b38pjpq5p8esj" path="res://tile_map_layer.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://splqdklg7in7" path="res://player.tscn" id="2_r0du0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_r0du0")]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_uu6xs")]
+script = null
+
+[node name="Node2D" parent="." instance=ExtResource("2_r0du0")]
+
+[node name="Camera2D" type="Camera2D" parent="Node2D"]
+zoom = Vector2(4.5, 4.5)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node2D"]
+offset_left = -139.0
+offset_top = -85.0
+offset_right = 14.0
+offset_bottom = -45.0
+text = "hi this is text test"

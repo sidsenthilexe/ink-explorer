@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bti3clwx13d5s"]
+
+[ext_resource type="Texture2D" uid="uid://bh1y0mqureugq" path="res://art/score.png" id="1_p5nkm"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_p5nkm")
